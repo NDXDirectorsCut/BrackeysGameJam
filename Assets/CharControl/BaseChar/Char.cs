@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Char : MonoBehaviour
+public class Char2 : MonoBehaviour
 {
 	public float MvS = 15f;
 	public Rigidbody2D Pl;	
-	Vector2 MvM;
+	Vector2 MvM;	
+
+
 	void Update()
     {
 	//Input Handler
@@ -23,4 +25,3 @@ public class Char : MonoBehaviour
 	Pl.MovePosition(Pl.position + MvM * MvS * Time.fixedDeltaTime);
     }
 }
-	
